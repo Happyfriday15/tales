@@ -252,6 +252,15 @@ h2 { font-size: clamp(34px, 4.6vw, 58px); }
 .installed.flame { bottom: -47px; left: 20px; width: 27px; height: 49px; background: #ffc94a; border: 4px solid #e2714f; clip-path: polygon(50% 100%, 0 0, 100% 0); }
 .part { display: flex; align-items: center; justify-content: space-between; gap: 9px; background: #fffaf0; border-color: #7a5a4c; }
 .part small { color: #a37b64; font-size: 11px; font-weight: 400; } .part.used small { display: none; }
+.book { border-radius: 18px 30px 30px 18px; background: linear-gradient(90deg, #fffdf6 0%, #fffdf6 48.8%, #f0e5d4 49.5%, #f8efdf 50%, #fffdf6 51.2%, #fffdf6 100%); box-shadow: 0 28px 60px rgba(55, 43, 55, .18), inset 18px 0 0 rgba(236, 220, 194, .35), inset -8px 0 0 rgba(236, 220, 194, .25); }
+.book::before { content: ''; position: absolute; z-index: 0; top: 0; bottom: 0; left: 49.45%; width: 24px; background: linear-gradient(90deg, rgba(177, 140, 105, .04), rgba(177, 140, 105, .23), rgba(255,255,255,.35), rgba(177, 140, 105, .06)); box-shadow: inset 1px 0 rgba(130, 96, 72, .12), inset -1px 0 rgba(255,255,255,.55); pointer-events: none; }
+.book::after { content: ''; position: absolute; z-index: 0; right: 0; bottom: 0; width: 86px; height: 86px; background: linear-gradient(135deg, transparent 0 50%, #f0e1c9 51% 67%, #fffdf6 68%); opacity: .7; pointer-events: none; }
+.page-illustration { min-height: 300px; }
+.page-copy { max-width: 650px; padding: 8px 22px 0; }
+.story-text { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(17px, 2vw, 21px); color: #554b5a; }
+.page-number { padding: 6px 13px; border-radius: 999px; background: rgba(247, 233, 206, .72); color: #86694f; font-family: Georgia, 'Times New Roman', serif; }
+.page-controls { padding-top: 14px; border-top: 1px solid rgba(134, 105, 79, .18); }
+.helper-text { font-family: Georgia, 'Times New Roman', serif; }
 .rocket-customizer { display: grid; gap: 10px; align-content: center; padding: 20px; min-width: 220px; border-radius: 20px; background: #fff4cf; border: 3px solid #d59a56; color: #684331; }
 .rocket-customizer label, .design-label { font-weight: 700; font-size: 15px; }
 .rocket-customizer input { width: 100%; padding: 11px 13px; border: 2px solid #b97b5f; border-radius: 12px; background: #fffdf6; color: var(--ink); font: inherit; }
