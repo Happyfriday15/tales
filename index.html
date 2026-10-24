@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Parker Builds to Mars — an interactive picture book." />
+  <title>Parker Builds to Mars</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="book-shell" aria-live="polite">
+    <header class="topbar">
+      <div class="brand-mark" aria-label="Parker Builds to Mars">
+        <span class="brand-star" aria-hidden="true"></span>
+        <span>Parker Builds to Mars</span>
+      </div>
+      <div class="progress-wrap" aria-label="Book progress">
+        <span class="progress-label" id="progressLabel">Cover</span>
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      </div>
+    </header>
+
+    <section class="book" id="book" aria-label="Interactive book page">
+      <div class="page-illustration" id="illustration"></div>
+      <div class="page-copy" id="pageCopy"></div>
+      <div class="page-controls">
+        <button class="button button-ghost" id="backButton" type="button">Back</button>
+        <div class="page-number" id="pageNumber">Cover</div>
+        <button class="button button-primary" id="nextButton" type="button">Start the story</button>
+      </div>
+    </section>
+
+    <p class="helper-text" id="helperText">A story you can help tell.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
